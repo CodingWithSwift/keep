@@ -39,6 +39,7 @@
               "value" : true
             }
           ],
+          "hidden" : true,
           "image-name" : "images.svg",
           "name" : "images",
           "position" : {
@@ -46,6 +47,46 @@
             "translation-in-points" : [
               0,
               0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill-specializations" : [
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "srgb:1.00000,1.00000,1.00000,1.00000"
+              }
+            },
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "srgb:1.00000,1.00000,1.00000,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "k.png",
+          "name" : "k",
+          "position" : {
+            "scale" : 0.94,
+            "translation-in-points" : [
+              0,
+              -1.75
             ]
           }
         }
