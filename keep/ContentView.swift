@@ -10,18 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, World!")
-            
+            ZStack {
+                Text("keep")
+                    .bold()
+                    
+            }
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-                Text("Tab Content 1").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 1")/*@END_MENU_TOKEN@*/ }.tag(1)
-                Text("Tab Content 2").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 2")/*@END_MENU_TOKEN@*/ }.tag(2)
+                Text("Tab Content 1").tabItem { Image(systemName: "house")}.tag(1)
+                Text("Tab Content 2").tabItem { Image(systemName: "calendar")}.tag(2)
+                Text("Tab Content 3").tabItem { Image(systemName: "gear")}.tag(3)
             }
             
         }
-        .padding()
+
     }
 }
 
