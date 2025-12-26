@@ -1,2 +1,2 @@
-# Keep
-Keep - Diary App
+# keep
+keep - a new way to log your life
