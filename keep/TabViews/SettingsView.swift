@@ -9,7 +9,6 @@
 import SwiftUI
 
 
-
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     let myCornerRadius: CGFloat = 10
@@ -19,7 +18,7 @@ struct SettingsView: View {
                 Section(header: Text("General")){
                     
                     
-                    Toggle(isOn: $statetoggled,
+                    Toggle(isOn: .constant(false),
                            label: {
                         Text("Test")
                     })
