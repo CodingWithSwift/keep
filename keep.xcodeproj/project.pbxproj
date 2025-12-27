@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		174F31E92F0023EB00501A3A /* Local.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 174F31E82F0023EB00501A3A /* Local.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		174F31E82F0023EB00501A3A /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
 		17DB40EA2EFF204A009DD315 /* keep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		17DB40E12EFF204A009DD315 = {
 			isa = PBXGroup;
 			children = (
+				174F31E82F0023EB00501A3A /* Local.xcconfig */,
 				17DB40EC2EFF204A009DD315 /* keep */,
 				17DB40EB2EFF204A009DD315 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174F31E92F0023EB00501A3A /* Local.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +134,7 @@
 /* Begin XCBuildConfiguration section */
 		17DB40F32EFF204A009DD315 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = 17DB40EC2EFF204A009DD315 /* keep */;
-			baseConfigurationReferenceRelativePath = DeveloperSettings.xcconfig;
+			baseConfigurationReference = 174F31E82F0023EB00501A3A /* Local.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -162,7 +168,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = CK5493FDX5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -193,6 +198,7 @@
 		};
 		17DB40F42EFF204A009DD315 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174F31E82F0023EB00501A3A /* Local.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -226,7 +232,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = CK5493FDX5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -250,8 +255,7 @@
 		};
 		17DB40F62EFF204A009DD315 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = 17DB40EC2EFF204A009DD315 /* keep */;
-			baseConfigurationReferenceRelativePath = DeveloperSettings.xcconfig;
+			baseConfigurationReference = 174F31E82F0023EB00501A3A /* Local.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = keep_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -271,7 +275,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.kabel6499.keep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -286,6 +289,7 @@
 		};
 		17DB40F72EFF204A009DD315 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174F31E82F0023EB00501A3A /* Local.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = keep_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,7 +309,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.kabel6499.keep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
