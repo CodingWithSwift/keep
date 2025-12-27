@@ -10,6 +10,8 @@ import SwiftUI
 
 
 struct SettingsView: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    let myCornerRadius: CGFloat = 10
     var body: some View {
         NavigationView{
             Form(){
@@ -20,16 +22,20 @@ struct SettingsView: View {
                            label: {
                         Text("Test")
                     })
-                    
-                    
                         
-                        
+                    Toggle("Dark Mode", isOn: $isDarkMode)
+                                        .toggleStyle(SwitchToggleStyle(tint: .blue)) // Optional: Farbe anpassen
+                                        .padding(3)
+                                        .cornerRadius(10)
+                    
                     }
+                
+                
                 
                 }
             
             .navigationTitle(Text("settings"))
-            
+            .preferredColorScheme(isDarkMode ? .dark : .light)
             
             }
 
