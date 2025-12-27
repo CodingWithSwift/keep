@@ -13,12 +13,19 @@ struct ContentView: View {
             ZStack {
                 Text("keep")
                     .bold()
-                    
             }
+            
+            
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-                Text("Tab Content 1").tabItem { Image(systemName: "house")}.tag(1)
-                Text("Tab Content 2").tabItem { Image(systemName: "calendar")}.tag(2)
-                Text("Tab Content 3").tabItem { Image(systemName: "gear")}.tag(3)
+            
+            CalendarView()
+                    .tabItem{
+                        Image(systemName: "calendar")
+                    }
+            SettingsView()
+                    .tabItem{
+                        Image(systemName: "gear")
+                    }
             }
             
         }
