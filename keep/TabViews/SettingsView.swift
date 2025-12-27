@@ -9,20 +9,20 @@
 import SwiftUI
 
 
+
 struct SettingsView: View {
+    
+    @State var statetoggled: Bool = false
     var body: some View {
         NavigationView{
             Form(){
                 Section(header: Text("General")){
                     
                     
-                    Toggle(isOn: .constant(false),
+                    Toggle(isOn: $statetoggled,
                            label: {
                         Text("Test")
                     })
-                    
-                    
-                        
                         
                     }
                 

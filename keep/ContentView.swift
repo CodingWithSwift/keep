@@ -28,9 +28,7 @@ struct ContentView: View {
                             .imageScale(.large)
                             .controlSize(.large)
                     }
-                    .buttonBorderShape(.circle)
-                    .buttonStyle(.glassProminent)
-                    .frame (width: 100, height: 100)
+                    .buttonBorderShape(.circle) 
                     .tint(Color.blue)
                     .scaledToFit()
                     .controlSize(.large)
