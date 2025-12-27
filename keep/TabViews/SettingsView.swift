@@ -11,13 +11,30 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "gear")
-            Text("Settings")
+        NavigationView{
+            Form(){
+                Section(header: Text("General")){
+                    
+                    
+                    Toggle(isOn: .constant(false),
+                           label: {
+                        Text("Test")
+                    })
+                    
+                    
+                        
+                        
+                    }
+                
+                }
+            
+                
+            }
+
         }
 
     }
-}
+
 
 #Preview {
     SettingsView()

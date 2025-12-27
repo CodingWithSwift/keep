@@ -11,8 +11,10 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Image(systemName: "figure.wave")
+            Image(systemName: "house")
+                .font(.largeTitle)
             Text("Home")
+                .font(.largeTitle)
         }
 
     }

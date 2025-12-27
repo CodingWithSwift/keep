@@ -19,50 +19,6 @@
     {
       "layers" : [
         {
-          "fill-specializations" : [
-            {
-              "appearance" : "dark",
-              "value" : {
-                "solid" : "srgb:1.00000,1.00000,1.00000,1.00000"
-              }
-            },
-            {
-              "appearance" : "tinted",
-              "value" : {
-                "solid" : "srgb:1.00000,1.00000,1.00000,1.00000"
-              }
-            }
-          ],
-          "glass-specializations" : [
-            {
-              "appearance" : "tinted",
-              "value" : true
-            }
-          ],
-          "hidden" : true,
-          "image-name" : "images.svg",
-          "name" : "images",
-          "position" : {
-            "scale" : 3.5,
-            "translation-in-points" : [
-              0,
-              0
-            ]
-          }
-        }
-      ],
-      "shadow" : {
-        "kind" : "neutral",
-        "opacity" : 0.5
-      },
-      "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
-      }
-    },
-    {
-      "layers" : [
-        {
           "blend-mode" : "normal",
           "fill-specializations" : [
             {

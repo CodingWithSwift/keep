@@ -12,7 +12,9 @@ struct CalendarView: View {
     var body: some View {
         VStack {
             Image(systemName: "calendar")
-            Text("Kalender")
+                .font(.largeTitle)
+            Text("Calendar")
+                .font(.largeTitle)
         }
 
     }
