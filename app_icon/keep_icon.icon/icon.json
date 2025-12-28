@@ -1,8 +1,8 @@
 {
   "fill" : {
     "linear-gradient" : [
-      "display-p3:0.38279,0.36364,0.54563,1.00000",
-      "display-p3:0.16153,0.20234,0.37123,1.00000"
+      "srgb:0.57415,0.57416,0.57415,1.00000",
+      "display-p3:0.72278,0.90607,0.99326,1.00000"
     ],
     "orientation" : {
       "start" : {
@@ -21,6 +21,11 @@
         {
           "blend-mode" : "normal",
           "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.00000,0.00000,0.00000,1.00000"
+              }
+            },
             {
               "appearance" : "dark",
               "value" : {
