@@ -26,7 +26,7 @@ struct CalendarView: View {
             Button(action: {
                 print(selectedDate)
             }) {
-                Label( "Add", systemImage: "checkmark.circle.fill")
+                Label( "Add", systemImage: "checkmark.circle")
                     .bold()
                     .labelStyle(.iconOnly)
                     .foregroundStyle(.black)
