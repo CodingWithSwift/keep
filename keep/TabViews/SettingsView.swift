@@ -13,7 +13,9 @@ struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     let myCornerRadius: CGFloat = 10
     var body: some View {
-        NavigationView{
+        Text("Settings")
+                .font(.system(size: 34, weight: .bold)) // Entspricht Large Title
+                .padding(.horizontal)
             Form(){
                 Section(header: Text("General")){
                     
@@ -34,14 +36,13 @@ struct SettingsView: View {
                 
                 }
             
-            .navigationTitle(Text("settings"))
             .preferredColorScheme(isDarkMode ? .dark : .light)
             
             }
 
         }
 
-    }
+    
 
 
 #Preview {

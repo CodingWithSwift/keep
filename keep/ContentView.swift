@@ -6,57 +6,39 @@
 //
 
 import SwiftUI
-
+public let datatext = "This is a diary entry!"
 
 struct ContentView: View {
     var body: some View {
-        
-        ZStack {     
-            
-            
-            VStack {
-                HStack{
-                    
-                    Spacer()
-                    Button(action: {
-                        //The Button Action here
-                    }) {
-                        Label( "Add", systemImage: "plus")
-                            .bold()
-                            .labelStyle(.iconOnly)
-                            .foregroundStyle(.white)
-                            .imageScale(.large)
-                            .controlSize(.large)
-                    }
-                    .buttonBorderShape(.circle) 
-                    .tint(Color.blue)
-                    .scaledToFit()
-                    .controlSize(.large)
-                    
-                }
-                TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+        NavigationStack{
+            TabView {
+                Tab("Home", systemImage: "house") {
                     HomeView()
-                        .tabItem{
-                            Image(systemName: "house")
-                        }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+                Tab("Calendar", systemImage: "calendar") {
                     CalendarView()
-                        .tabItem{
-                            Image(systemName: "calendar")
-                        }
+                }
+                Tab("Settings", systemImage: "gear") {
                     SettingsView()
-                        .tabItem{
-                            Image(systemName: "gear")
-                        }
                 }
                 
+                
+            }
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        saveData()
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.headline) // Macht das Icon etwas dicker und passender für eine Toolbar
+                    }
+                    .foregroundStyle(.blue) // Färbt das Icon blau
+                }
             }
             
         }
-            
-        }
     }
-    
+}
 
 #Preview {
     ContentView()
